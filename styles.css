@@ -1,0 +1,120 @@
+
+body {
+  color:black;
+  font-weight: bold;
+  background-color: #de0c338f;
+}
+
+
+header {
+  text-align: center;
+}
+
+
+.container {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#heads-super {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: #f2f2f268;
+  border-radius: 25%;
+  text-align: center;
+
+}
+
+
+.heads {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: #f2f2f268;
+  border-radius: 25%;
+  text-align: center;
+}
+
+label, button, select, input {
+  background-color: #7799fffa; 
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #7799fffa;
+  font-size: 16px;
+  resize: none;
+}
+
+
+button {
+  background-color: #7799fffa;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.customCheckbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.customCheckbox .checkmark {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #7799fffa;
+  display: inline-block;
+  border-radius: 5px; /* Optional: for rounded corners */
+  cursor: pointer;
+}
+
+.customCheckbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #2196F3;
+}
+
+.customCheckbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customCheckbox input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #7799fffa;
+
+}
+
+
+
+button {
+  margin-top: 10px;
+}

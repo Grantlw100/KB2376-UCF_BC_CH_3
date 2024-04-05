@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="My Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Website</title>
+        <link rel="stylesheet" href="./src/styles.css">
+    </head>
+    <body>
+        <div>
+            <h1 id="heads-super" >Password Mixer</h1>
+            <form id="form">
+                <div>
+                    <h2 class="heads">Password customization</h2>
+                    <div class="customization-Options-1">
+                        <p>Enter the length of the password</p>
+                    <input id='Charcount' type="number" max="128" min="8" placeholder="8-128" name="passwordLength">
+                        <h3>Choose the characters you want to include in your password</h3>
+                        <p>Would you like your password to include Special Characters?</p>
+                    <label class="customCheckbox">
+                        <input id="specialChars" type="checkbox" name="specialCharacters" title="special characters">
+                    <span class="checkmark"></span>
+                    </label>
+                        <p>Would you like your password to include numbers?</p>
+                    <label class="customCheckbox">
+                        <input id="Numbers" type="checkbox" name="numbers" title="numbers">
+                    <span class="checkmark"></span> 
+                    </label> 
+                </div>
+                    <p>Uppercase or Lowercase, Both, or No letters at all</p>
+                    <select name="letters" id="selector">
+                        <option id="uppercase" value="uppercase">Uppercase</option>
+                        <option id="lowercase" value="lowercase">Lowercase</option>
+                        <option id="both" value="both">Both</option>
+                        <option id="none" value="none">No letters</option>
+                    
+                    </select>
+                    <button type='submit' id="generate">Generate</button>
+            </form>
+
+        
+
+            <div id="password-output">
+                <h2 class="heads">Heres your New Password</h2>
+                        <input type="text" id="output" readOnly>
+                    </div>
+                </div>
+                <textarea id="savedPasswords1" rows="10" cols="128" placeholder="Generate some Passwords" readonly>
+                </textarea>
+            
+            <div>
+                <h2 class="heads" >Alternative Password Generator</h2> 
+                <p>Enter a memorable phrase to generate a new password using letters, spaces, and numbers. Do not use special characters when creating a phrase for password generation. You can always edit the copied password.</p>
+                <form id="form2">
+                    <input type="text" id="phrase" placeholder="Enter a phrase" name="phrase">
+                    <button type="submit" id="generate2">Generate</button>
+            </div>
+            <div id="password-output2">
+                <h2 class="heads" >Heres your New Password</h2>
+                <input type="text" id="output2" readOnly>
+        </div>
+        <textarea id="savedPasswords2" rows="10" cols="50" placeholder="Generate some Passwords" readonly>
+        </textarea>
+
+        <script src="src/index.js"></script>
+    </body>
+</html>
